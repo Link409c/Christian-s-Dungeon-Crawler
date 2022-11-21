@@ -1,5 +1,3 @@
-package ManualLinkedList;
-
 public class Node<E>{
 
     //object held by the node
