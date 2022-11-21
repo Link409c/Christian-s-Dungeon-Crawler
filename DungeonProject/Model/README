@@ -1,0 +1,53 @@
+"Christian's Dungeon Crawler" is my first attempt at a full program incorporating data structures since the
+start of my computer science degree path in 2019. I have attempted to create a roguelike dungeon crawler in my
+game.
+
+The goal is to make it to the bottom floor of the dungeon. Each floor is circular. The rooms can contain enemies and
+items, and each move will tell the user how far they are from the exit of the floor.
+
+From the Dungeon Menu, the user can move left or right, check the map, check their status, check their inventory,
+or quit the game.
+
+If the user moves, the game checks the room they move into for enemies first. If an enemy exists, they battle!
+
+The user can choose to attack, defend, or use items.
+
+Attacking damages the enemy based on the attacker's attack stat versus the target defense. Defending restores a
+little HP while doubling defense for the turn.
+
+When using items, the user can use a healing item, or change equipment. Only using a healing item ends the
+player turn.
+
+When a battle is finished, if the player wins, a rewards screen is displayed.
+
+Afterward, any items in the room will be picked up, and if the player has reached the exit, they will proceed to
+the next floor.
+
+When the Player reaches floor 99, they will face a final boss battle. If they are victorious, the game is won!
+
+The user can continue to play after this point for an additional challenge if they want.
+
+At any point outside of battle, the user can quit. If they choose to continue, they can start a new dungeon with
+their current Player information saved. If they quit, the information is discarded.
+
+KNOWN BUGS
+
+I was not able to fix these issues before submission:
+
+Usable items all have the same name when printing inventory
+    All inventory items have the same name but display correctly in the dungeon
+    Can equip items by typing the correct name into the menu, so the stored name variable is correct, it is just displaying wrong
+    Items trend to be named after whatever is in that sub inventory first
+        Picked up a leather tunic first then all equipment is named leather tunic
+    Equipment displays incorrectly in status window
+        The name it is given in the sub inventory is incorrect
+    Equipment works but equips in order of displayed item name
+    For example, inventory is sword and leather tunic.
+        Choose to equip sword
+        Equips leather tunic instead.
+        Try to equip sword again: it works!
+        Equipment is in the correct slots
+        Inventory is updated correctly and displays correctly.
+
+Map layout extends beyond "frame" of display window.
+
