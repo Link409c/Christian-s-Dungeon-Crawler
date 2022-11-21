@@ -1,5 +1,3 @@
-package ManualLinkedList;
-
 /***************************************************************************************************************
  * ChristianHolder.java
  * @author Chris Simpson
